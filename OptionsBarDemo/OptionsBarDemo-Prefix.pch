@@ -1,0 +1,30 @@
+//
+//  OptionsBarDemo-Prefix.pch
+//  OptionsBarDemo
+//
+//  Created by hanzhanbing on 16/8/19.
+//  Copyright © 2016年 asj. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "UtilTools.h"
+
+#ifndef OptionsBarDemo_Prefix_pch
+#define OptionsBarDemo_Prefix_pch
+
+#define WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#pragma mark Color
+
+#define kColorFromARGBHex(value,a) [UIColor colorWithRed:((float)((value & 0xFF0000) >> 16))/255.0 green:((float)((value & 0xFF00) >> 8))/255.0 blue:((float)(value & 0xFF))/255.0 alpha:a] //a:透明度
+#define kColorFromRGBHex(value) [UIColor colorWithRed:((float)((value & 0xFF0000) >> 16))/255.0 green:((float)((value & 0xFF00) >> 8))/255.0 blue:((float)(value & 0xFF))/255.0 alpha:1.0]
+#define kColorFromRGB(r,g,b) [UIColor colorWithRed:(float)r /255.0 green:(float)g /255.0 blue:(float)b /255.0 alpha:1.0]
+
+#define AppThemeColor kColorFromRGBHex(0xFCAA1B)//
+#define PageColor kColorFromRGBHex(0xEFEFEF)
+#define LineColor kColorFromRGBHex(0xafafaf)
+#define fontLightGray kColorFromRGBHex(0xc6c6c6)
+#define TableViewBGcolor kColorFromRGBHex(0xECECEC)
+
+#endif /* OptionsBarDemo_Prefix_pch */
